@@ -4,12 +4,7 @@
  * Tailwind CSS v4 - Using new @import syntax
  * Docs: https://tailwindcss.com/docs/installation/using-vite
  */
-
-@import "tailwindcss";
-
 /* Tell Tailwind where to scan for classes */
-@source "./**/*.{js,jsx,ts,tsx}";
-@source "../index.html";
 
 /**
  * Custom Global Styles
@@ -19,9 +14,6 @@
  */
 
 /* Smooth scrolling for anchor links */
-html {
-  scroll-behavior: smooth;
-}
 
 /* Optional: Custom scrollbar styles */
 /* Uncomment if you want custom scrollbar
@@ -42,3 +34,18 @@ html {
   background: #555;
 }
 */
+@import "tailwindcss";
+@source "./**/*.{js,jsx,ts,tsx}";
+@source "../index.html";
+
+@theme {
+  --color-primary: #F97316;
+  --color-primary-hover: #EA6C0A;
+  --color-dark: #0D0D0D;
+  --color-dark-card: #1A1A1A;
+  --font-sans: 'Inter', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}

@@ -19,7 +19,60 @@
  * Button variant types
  * Gunakan ini untuk Button component
  */
+// src/types/index.ts
+// (ganti semua isinya dengan ini)
+
 export type ButtonVariant = 'primary' | 'secondary' | 'outline';
+export interface NavItem {
+  label: string;
+  href: string;
+}
+
+export interface Stat {
+  id: number;
+  number: string;
+  label: string;
+}
+
+export interface Process {
+  id: number;
+  title: string;
+  description: string;
+}
+
+export interface Service {
+  id: number;
+  title: string;
+  description: string;
+  icon: string;
+}
+
+export interface Industry {
+  id: number;
+  title: string;
+  description: string;
+}
+
+export interface Portfolio {
+  id: number;
+  title: string;
+  category: string;
+  image: string;
+}
+
+export interface Testimonial {
+  id: number;
+  name: string;
+  position: string;
+  company: string;
+  quote: string;
+}
+
+export interface FAQ {
+  id: number;
+  question: string;
+  answer: string;
+}
 
 /**
  * Example: Button Props
